@@ -6,21 +6,11 @@ let playerOne = document.querySelector(".playerOne");
 let playHeading = document.querySelector(".playHeading");
 let nameInputTwo = document.querySelector(".nameInputTwo")
 
-
 startBtn.addEventListener("click", function () {
   if (playerOneName.value == "") {
     errorHeading.style.display = "block";
   } 
   else {
-    // mainScreen.style.display = "none";
-    // playerOne.style.display = "block";
-    // playHeading.innerHTML = playHeading.innerHTML.replace("Wanna Play game?", "Player - 1");
-    // playerOneName.placeholder = playerOneName.placeholder.replace("What is your name", "Give a number");
-    // playerOneName.type = playerOneName.type.replace("text", "number");
-    // startBtn.innerHTML = startBtn.innerHTML.replace("Start Game" ,"Let’s Play");
-    // errorHeading.innerHTML = errorHeading.innerHTML.replace("Name Is Missing", "Please give a number");
-
-    
     errorHeading.style.display = "none";
     playHeading.innerHTML = "Player - 1";
     playerOneName.value = "";
@@ -29,7 +19,6 @@ startBtn.addEventListener("click", function () {
     startBtn.innerHTML = "Let’s Play";
     errorHeading.innerHTML = "Please give a number";
 
-
     playerOneName.addEventListener("input", function () {
       const val = Number(playerOneName.value);
       if (playerOneName.value !== "" && !isNaN(val)) {
@@ -37,11 +26,6 @@ startBtn.addEventListener("click", function () {
       }
       
     });
-    // playerOneName.addEventListener("input", function () {
-    //   if(playerOneName.value < 1 && playerOneName.value > 10){
-    //     errorHeading.style.display = "block";
-    //   }
-    // })
   }
 });
 
