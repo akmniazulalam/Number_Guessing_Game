@@ -18,7 +18,13 @@ ul, ol {
 
 .mainScreen{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px !important;
+    padding: 50px 0;
+    background: rgb(255, 226, 188);
+    width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;
+    height: 580px;
 }
 .playHeading{
     font-family: "Poppins", sans-serif;
@@ -56,6 +62,7 @@ ul, ol {
     margin-top: 35px;
     margin-bottom: 45px;
     border: none;
+    cursor: pointer;
 }
 .errorHeading{
     background: #CC3030;
@@ -64,7 +71,8 @@ ul, ol {
     color: #FFF;
     font-weight: 700;
     font-size: 48px;
-    padding: 16px 170px;
+    padding: 16px 0px;
+    text-align: center;
     width: 778px;
     margin: 0 auto;
     display: none;
