@@ -23,6 +23,13 @@ startBtn.addEventListener("click", function () {
       const val = Number(playerOneName.value);
       if (playerOneName.value !== "" && !isNaN(val)) {
         playerOneName.value = Math.max(1, Math.min(10, val));
+        startBtn.addEventListener("click", function () {
+          playHeading.innerHTML = "Player - 2 Name";
+          playerOneName.placeholder = "What is your name";
+          startBtn.innerHTML = "Start Game";
+          playerOneName.type = "text";
+          errorHeading.innerHTML = "Name Is Missing";
+        })
       }
       
     });
