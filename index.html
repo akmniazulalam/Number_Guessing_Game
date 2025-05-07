@@ -1,33 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Class #33</title>
     <!-- Google Fonts Start  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Google Fonts End  -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="mainScreen">
-            <h1 class="playHeading">Wanna Play game?</h1>
-            <input type="text" class="nameInput" placeholder="What is your name">
-            <button type="submit" class="startBtn">Start Game</button>
-            <h3 class="errorHeading">Name Is Missing</h3>
+      <div class="mainScreen">
+        <h1 class="playHeading">Wanna Play game?</h1>
+        <div class="screenOne">
+          <input
+            type="text"
+            class="nameInput"
+            placeholder="What is your name"
+          />
+          <button type="submit" class="startBtn">Start Game</button>
         </div>
-        <!-- <div class="playerOne">
-            <h1 class="playerOneHeading">Player - 1</h1>
-            <input type="number" class="nameInputTwo" placeholder="Give a number">
-            <button type="submit" class="playBtn">Let’s Play</button>
-            <h3 class="missingNumberError">Please give a number</h3>
-        </div> -->
+        <div class="playerOne">
+          <input
+            type="number"
+            class="nameInputTwo"
+            placeholder="Give a number"
+          />
+          <button type="submit" class="playBtn">Let’s Play</button>
+        </div>
+        <div class="playerTwoName">
+          <input
+            type="text"
+            class="nameInputThree"
+            placeholder="What is your name"
+          />
+          <button type="submit" class="startBtnTwo">Start Game</button>
+        </div>
+        <div class="playerTwoNumber">
+            <p>Chance - 1</p>
+          <input
+            type="number"
+            class="playerTwoInput"
+            placeholder="Guess a number"
+          />
+          <button type="submit" class="playBtnTwo">Guess</button>
+        </div>
+        <div class="guessNumber">
+            <p>Chance - 2</p>
+          <input
+            type="number"
+            class="guessNumberInput"
+            placeholder="Guess a number"
+          />
+          <button type="submit" class="guessBtn">Guess</button>
+        </div>
+        <div class="guessNumberThree">
+            <p>Chance - 3</p>
+          <input
+            type="number"
+            class="guessNumberThreeInput"
+            placeholder="Guess a number"
+          />
+          <button type="submit" class="guessThreeBtn">Guess</button>
+        </div>
+        <div class="guessNumberFour">
+            <p>Chance - 4</p>
+          <input
+            type="number"
+            class="guessNumberFourInput"
+            placeholder="Guess a number"
+          />
+          <button type="submit" class="guessFourBtn">Guess</button>
+        </div>
+        <div class="lastGuess">
+            <p>Chance - 5</p>
+          <input
+            type="number"
+            class="guessNumberFiveInput"
+            placeholder="Guess a number"
+          />
+          <button type="submit" class="guessFiveBtn">Guess</button>
+        </div>
 
+
+        <div class="congrats">
+            <h2>👏 👏 👏<br> Congratulations! <span class="name"></span> <br> You’re the lucky winner of the guessing game! <br> 👑</h2>
+        </div>
+
+        <div class="failure">
+            <h4>🛑 Game Over! You've used all 5 chances. <br> 😢 No more guesses left — the number was <span class="actualNumber"></span>. <br> 🍀 Better luck next time! <br> 🏆 <span class="one"></span> has won the game! 🎉👑</h4>
+        </div>
+        <h3 class="errorHeading">Name Is Missing</h3>
+      </div>
     </div>
 
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>

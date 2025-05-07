@@ -18,13 +18,14 @@ ul, ol {
 
 .mainScreen{
     text-align: center;
-    margin-top: 30px !important;
+    margin-top: 25px !important;
     padding: 50px 0;
     background: rgb(255, 226, 188);
     width: 1000px;
     margin: 0 auto;
     border-radius: 10px;
     height: 580px;
+    position: relative;
 }
 .playHeading{
     font-family: "Poppins", sans-serif;
@@ -33,7 +34,7 @@ ul, ol {
     color: #000;
     margin-bottom: 35px;
 }
-.nameInput{
+input{
     color: #000;
     font-weight: 700;
     font-size: 32px;
@@ -45,13 +46,13 @@ ul, ol {
     width: 868px;
     margin: 0 auto;
 }
-.nameInput::placeholder{
+input::placeholder{
     color: #D9D9D9;
     font-weight: 700;
     font-size: 32px;
     font-family: "Poppins", sans-serif;
 }
-.startBtn{
+button{
     font-family: "Poppins", sans-serif;
     color: #FFF;
     font-weight: 700;
@@ -60,11 +61,11 @@ ul, ol {
     padding: 14px 80px;
     border-radius: 60px;
     margin-top: 35px;
-    margin-bottom: 45px;
+    margin-bottom: 35px;
     border: none;
     cursor: pointer;
 }
-.errorHeading{
+h3{
     background: #CC3030;
     border-radius: 5px;
     font-family: "Poppins", sans-serif;
@@ -77,8 +78,61 @@ ul, ol {
     margin: 0 auto;
     display: none;
 }
+p{
+    font-family: "Poppins", sans-serif;
+    color: #000;
+    font-weight: 700;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
 .playerOne{
     display: none;
-    text-align: center;
-    margin-top: 50px;
+}
+.playerTwoName{
+    display: none;
+}
+.playerTwoNumber{
+    display: none;
+}
+.guessNumber{
+    display: none;
+}
+.guessNumberThree{
+    display: none;
+}
+.guessNumberFour{
+    display: none;
+}
+.lastGuess{
+    display: none;
+}
+.congrats{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.failure{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h2{
+    font-family: "Poppins", sans-serif;
+    color: #000;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 75px;
+    width: 692px;
+}
+h4 {
+    font-family: "Poppins", sans-serif;
+    color: #000;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 70px;
+    width: 810px;
 }
