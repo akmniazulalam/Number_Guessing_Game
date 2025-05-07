@@ -28,6 +28,14 @@ let nameInputTwo = document.querySelector(".nameInputTwo")
 let playBtn = document.querySelector(".playBtn");
 let playerTwoName = document.querySelector(".playerTwoName")
 
+nameInputTwo.addEventListener("input", function () {
+  const val = Number(nameInputTwo.value);
+  if (nameInputTwo.value !== "" && !isNaN(val)) {
+    nameInputTwo.value = Math.max(1, Math.min(10, val));
+  }
+})
+
+
 playBtn.addEventListener("click", function () {
   if (nameInputTwo.value == "") {
     errorHeading.innerHTML = "Please give a number"
@@ -235,27 +243,10 @@ guessFiveBtn.addEventListener("click", function () {
 // Guessing end 
 
 
-  // errorHeading.style.display = "none";
-  // playHeading.innerHTML = "Player - 1";
-  // playerOneName.value = "";
-  // playerOneName.placeholder = "Give a number";
-  // playerOneName.type = "number";
-  // startBtn.innerHTML = "Let’s Play";
-  // errorHeading.innerHTML = "Please give a number";
 
-  // playerOneName.addEventListener("input", function () {
-  //   const val = Number(playerOneName.value);
-  //   if (playerOneName.value !== "" && !isNaN(val)) {
-  //     playerOneName.value = Math.max(1, Math.min(10, val));
-  //     startBtn.addEventListener("click", function () {
-  //       playHeading.innerHTML = "Player - 2 Name";
-  //       playerOneName.placeholder = "What is your name";
-  //       startBtn.innerHTML = "Start Game";
-  //       playerOneName.type = "text";
-  //       errorHeading.innerHTML = "Name Is Missing";
-  //       })
-  //   }
-  // });
+
+
+
 console.log("Amin");
 // 3 types of function
 
